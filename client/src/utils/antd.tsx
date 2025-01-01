@@ -49,7 +49,7 @@ export const AntdConfigProvider = ({ children }: { children: React.ReactNode }) 
 			locale={enUS}
 			theme={{
 				algorithm: darkMode ? theme.darkAlgorithm : theme.defaultAlgorithm,
-				token: { colorPrimary: 'red', fontFamily: 'Poppins' }
+				token: { colorPrimary: 'red' }
 			}}
 		>
 			{children}
@@ -58,7 +58,7 @@ export const AntdConfigProvider = ({ children }: { children: React.ReactNode }) 
 }
 
 export const BeforeUpload = (file: FileType) => {
-	const isJpgOrPngOrSvg = ["image/jpeg", "image/png", "image/svg+xml", "image/webp"].includes(file.type)
+	const isJpgOrPngOrSvg = ['image/jpeg', 'image/png', 'image/svg+xml', 'image/webp'].includes(file.type)
 	if (!isJpgOrPngOrSvg) {
 		message.error('You can only upload JPG/PNG/SVG/WEBP file!')
 		return
