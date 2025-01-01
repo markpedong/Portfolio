@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  admin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: admin:latest
+    container_name: admin
+    ports:
+      - "6602:80"  # Map the host port 6602 to the container port 80
+    env_file: .env  # Ensure your .env file is correctly set up
+    restart: unless-stopped
