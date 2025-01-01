@@ -1,4 +1,4 @@
-# Portfolio Backend and Admin Interface
+# Portfolio Backend Service and Admin Interface
 
 A robust full-stack web service with a **Go** backend, **React** admin interface, and containerized with **Docker** for seamless deployment and scalability. This project includes a **CMS** for managing portfolio sections, message-sending functionality, and a backend API that communicates with a database using **Prisma** and **sqlx**.
 
